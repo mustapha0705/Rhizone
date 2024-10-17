@@ -1,0 +1,13 @@
+{
+  "name": "rhizone",
+  "version": "1.0.0",
+  "description": "Rhizone is an education platform I'm passionate about building and hope to take it to the next level",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Mustapha Mohammed",
+  "license": "UNLICENSED"
+}
