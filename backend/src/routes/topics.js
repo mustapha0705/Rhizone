@@ -1,24 +1,15 @@
-import express from 'express'
+import express from 'express';
+import { getAllTopics, getTopic, createTopic, updateTopic, deleteTopic } from '../controllers/topicController.js';
 
-const router = express.Router()
+const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.status(200).json({ msg: 'get all topics' })
-});
-router.get('/:id', (req, res) => {
-    res.status(200).json({ msg: 'get a single topic' })
-});
+router.get('/', getAllTopics);
+router.get('/:id', getTopic);
 
-router.post('/', (req, res) => {
-    res.status(200).json({ msg: 'create a topic' })
-});
+router.post('/', createTopic);
 
-router.patch('/:id', (req, res) => {
-    res.status(200).json({ msg: 'update a topic' })
-});
+router.patch('/:id', updateTopic);
 
-router.delete('/:id', (req, res) => {
-    res.status(200).json({ msg: 'delete a topic' })
-});
+router.delete('/:id', deleteTopic);
 
 export default router;
