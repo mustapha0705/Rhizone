@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
   res.status(200).json({ msg: 'API working perfectly' });
 });
 
-app.use('/api/questions', questions)
+app.use('/api/questions', questions);
 
 app.use(routeNotFound);
 
