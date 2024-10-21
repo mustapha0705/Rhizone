@@ -1,24 +1,15 @@
 import express from 'express';
+import { getAllQuestions, getQuestion, createQuestion, updateQuestion, deleteQuestion } from '../controllers/questionController.js';
 
 const router = express.Router()
 
-router.get('/', (req,res)=>{
-    res.status(200).json({msg: 'get all questions'})
-})
-router.get('/:id', (req,res)=>{
-    res.status(200).json({msg:'get a single question'})
-})
+router.get('/', getAllQuestions)
+router.get('/:id', getQuestion)
 
-router.post('/', (req,res)=>{
-    res.status(200).json({msg: 'create a question'})
-})
+router.post('/', createQuestion)
 
-router.patch('/:id', (req,res)=>{
-    res.status(200).json({msg:'update a question'})
-})
+router.patch('/:id', updateQuestion)
 
-router.delete('/:id',(req,res)=>{
-    res.status(200).json({msg:'delete a question'})
-})
+router.delete('/:id', deleteQuestion)
 
 export default router;
