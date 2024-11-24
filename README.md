@@ -1,5 +1,9 @@
 # Rhizone
 
+## TODO
+- Convert raw HTML and CSS (Bootstrap) files from [rz_font_end repository](https://github.com/mustapha0705/rz_font_end) used for beta testing into interactive Vue components.
+The TODO section has been added for clarity about the next steps in development.
+
 **Rhizone** is an online learning platform designed to bridge educational gaps and promote equitable education for students in underserved communities, particularly in Ghana. It provides a collaborative space where students can engage in discussions, ask questions, and access peer tutoring from volunteer tutors. Rhizone is built using **Node/Express** on the backend and **Vue** on the frontend.
 
 ## Features
@@ -17,11 +21,11 @@ To set up Rhizone on your local machine:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/username/rhizone.git
+   git clone https://github.com/mustapha0705/Rhizone.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd rhizone
+   cd Rhizone
    ```
 3. Install backend dependencies:
    ```bash
@@ -29,7 +33,7 @@ To set up Rhizone on your local machine:
    ```
 4. Navigate to the frontend directory and install frontend dependencies:
    ```bash
-   cd client
+   cd frontend
    npm install
    ```
 5. Add your MongoDB connection string to a `.env` file in the root directory:
